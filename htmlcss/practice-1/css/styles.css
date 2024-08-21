@@ -11,7 +11,7 @@ body {
 .textual-logo {
     background-color: #e62a1a;
     font-family: "Oswald", sans-serif;
-    font-size:26px;
+    font-size: 26px;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -21,14 +21,14 @@ body {
     text-align: center;
 }
 
-.textual-logo span{
+.textual-logo span {
     line-height: 47px;
 }
 
-footer{
-    height:50px;
-    width:100%;
+footer {
+    height: 50px;
+    width: 100%;
     background-color: #000;
-    position:absolute;
-   bottom:0;
+    position: absolute;
+    bottom: 0;
 }
