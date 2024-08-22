@@ -8,14 +8,6 @@ body {
     background-color: #000;
 }
 
-li {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-weight: 400;
-    font-size:20px;
-    font-style: normal;
-    list-style-type: none;
-}
-
 .textual-logo {
     background-color: #e62a1a;
     font-family: "Oswald", sans-serif;
@@ -27,11 +19,59 @@ li {
     color: #fff;
     height: 50px;
     text-align: center;
+    display: inline-block
 }
 
 .textual-logo span {
     line-height: 47px;
 }
+
+nav {
+    display: inline-block;
+}
+
+li {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    list-style-type: none;
+    display: inline-block;
+    color: #fff;
+    margin-right: 24px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #e62a1a;
+}
+
+.header-img {
+    background-image: url('../imgs/main-header.jpeg');
+    background-position: center;
+    height: 320px;
+}
+
+.header-img h2 {
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    text-align: center;
+    font-size: 105px;
+    color: #fff;
+    line-height: 289px;
+    margin:0;
+    text-shadow: -2px 4px 7px rgba(0,0,0,0.38);
+}
+
+
+}
+
+
 
 footer {
     height: 50px;
@@ -39,4 +79,18 @@ footer {
     background-color: #000;
     position: absolute;
     bottom: 0;
+}
+
+/* All styles related to about Us */
+
+#about-us {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.strip-header {
+    width: 200px;
+    background-color: #e62a1a;
+    padding: 15px 10px;
+    border-left: 10px solid #000;
 }
