@@ -1,3 +1,24 @@
+/*universal selector*/
+
+
+/* selectors 
+
+* - universal
+type or tag 
+class 
+ID
+combination selectors 
+*/
+
+
+/* : selectors and css positions */
+
+/* flex */
+
+/* Pseudo Class */ 
+
+
+
 body {
     padding: 0;
     margin: 0;
@@ -7,6 +28,8 @@ body {
     height: 50px;
     background-color: #000;
 }
+
+/* This class is used to style the logo */
 
 .textual-logo {
     background-color: #e62a1a;
@@ -30,6 +53,11 @@ nav {
     display: inline-block;
 }
 
+li:first-child > a {
+    color:aqua;
+}
+
+
 li {
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: 400;
@@ -37,19 +65,24 @@ li {
     font-style: normal;
     list-style-type: none;
     display: inline-block;
-    color: #fff;
     margin-right: 24px;
 }
 
+
 a {
-    color: white;
     text-decoration: none;
     text-transform: uppercase;
+    color:#fff;
 }
 
 a:hover {
     color: #e62a1a;
 }
+
+
+
+
+
 
 .header-img {
     background-image: url('../imgs/main-header.jpeg');
@@ -58,8 +91,9 @@ a:hover {
 }
 
 .header-img h2 {
-    font-family: "Dancing Script", cursive;
-    font-style: normal;
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
     text-align: center;
     font-size: 105px;
     color: #fff;
@@ -69,7 +103,7 @@ a:hover {
 }
 
 
-}
+
 
 
 
@@ -93,4 +127,11 @@ footer {
     background-color: #e62a1a;
     padding: 15px 10px;
     border-left: 10px solid #000;
+}
+
+
+
+/* select all div tags with p as children */
+div p {
+ color:blue;
 }
