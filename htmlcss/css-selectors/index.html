@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psuedo Classes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css" 
-</head>
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css/styles.css" </head>
+
 <body>
-    <div>Why am I Here</div>
-    <section id="pseudo-session">
-        <h1 style="text-align: center;">CSS Selectors</h1>
-        <div style="border-top:1px solid #919191; margin-top:10px;"></div>
-        <div style="padding:10px">
-            <p>Am the first child</p>
-            <p>Am the first child</p>
-            <p>Am the third child</p>
-                <div>Inside Div</div>
+    <header>
+        <h1>CSS Selectors</h1>
+    </header>
+    <div class="border-line"></div>
+    <div class="grocery-container">
+        <ul>
+            <li>Milk</li>
+            <li>Coffee</li>
+            <li>Apples</li>
+            <li>Vegetables</li>
+            <li>Soaps</li>
+            <li>Towels</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <p><code style="font-size: 34px" ;>:nth-child</code></p>
+        <code>
+            <ul class="n-section">
+                <li>Google - 1</li>
+                <li>Insta - 2</li>
+                <li>Facebook - 3</li>
+                <li>Twitter - 4</li>
+                <li>Snapchat - 5</li>
+                <li>Reddif - 6</li>
+                <li>Youtube - 7</li>
+                <li>Vemio - 8</li>
+                <li>Netflix - 9</li>
+                <li>Amazon Prime - 10</li>
+            </ul>
+        </code>
+       
+
+    </div>
+
+    <div class="container">
+        <p><code style="font-size: 34px" ;>:first-line</code></p>
+        <p class="firstline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias error sapiente eligendi
+            veritatis omnis quas
+            vero, rerum odit, nobis ut perferendis delectus aspernatur ipsam perspiciatis impedit, voluptate magnam
+            temporibus aut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sint laboriosam
+            animi beatae id veritatis incidunt voluptate officia, maxime error enim debitis! Adipisci deserunt, ad
+            perspiciatis voluptatibus itaque dolor assumenda.</p>
+    </div>
+
+    <div class="container">
+        <p><code style="font-size: 34px" ;>:is</code></p>
+        <div class="is-section"">
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe dolores distinctio omnis provident in. Cupiditate pariatur sunt quis libero accusantium voluptate! Nobis quas ratione iste repudiandae nostrum qui quo facere.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dicta magni praesentium rerum nobis, numquam minima at neque totam reprehenderit quidem. Fugit voluptate debitis, eligendi at nesciunt eaque aliquid nam?</p>
+            <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem fuga saepe possimus facere neque sint nobis doloribus quia veniam, nemo iure molestiae nulla officia suscipit veritatis eos deleniti corrupti reiciendis?</h5>
+            <a href=" /">Test link</a>
         </div>
-        <div style="padding:10px">
-            <h3>heading 3</h3>
-        <h3>Once again heading 3</h3>
-        <img src="../imgs/car.jpg" alt="A beautiful car"/>
-        <img src="../imgs/car.jpg" alt="A beautiful car"/>
-        <img src="../imgs/car.jpg" alt="A beautiful car"/>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae architecto quae magni? Sequi aspernatur, iure sapiente dignissimos eaque id tempora nesciunt libero minima asperiores assumenda magni corporis expedita earum quae!</p>
-        </div>
-        
-        
-    </section>
-    
+
+    </div>
+
+    <div class="container">
+        <p><code style="font-size: 34px" ;>:has</code></p>
+
+    </div>
+
+
+
 </body>
+
 </html>
