@@ -1,24 +1,3 @@
-/*universal selector*/
-
-
-/* selectors 
-
-* - universal
-type or tag 
-class 
-ID
-combination selectors 
-*/
-
-
-/* : selectors and css positions */
-
-/* flex */
-
-/* Pseudo Class */ 
-
-
-
 body {
     padding: 0;
     margin: 0;
@@ -53,8 +32,8 @@ nav {
     display: inline-block;
 }
 
-li:first-child > a {
-    color:aqua;
+li:first-child>a {
+    color: aqua;
 }
 
 
@@ -72,7 +51,7 @@ li {
 a {
     text-decoration: none;
     text-transform: uppercase;
-    color:#fff;
+    color: #fff;
 }
 
 a:hover {
@@ -92,14 +71,14 @@ a:hover {
 
 .header-img h2 {
     font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
     font-size: 105px;
     color: #fff;
     line-height: 289px;
-    margin:0;
-    text-shadow: -2px 4px 7px rgba(0,0,0,0.38);
+    margin: 0;
+    text-shadow: -2px 4px 7px rgba(0, 0, 0, 0.38);
 }
 
 
@@ -129,9 +108,51 @@ footer {
     border-left: 10px solid #000;
 }
 
-
-
-/* select all div tags with p as children */
 div p {
- color:blue;
+    color: blue;
+}
+
+
+/* css styles for psuedo classes session */
+/* Universal selector */
+#pseudo-session * {
+    font-size: 20px;
+}
+
+#pseudo-session h1 {
+    color: #e62a1a;
+}
+
+
+/* Pseudo selectors */
+#pseudo-session h1:first-child {
+    color: rgb(128, 0, 11);
+}
+
+/* descendant selector */
+#pseudo-session>h1 {
+    color: green;
+}
+
+
+
+#pseudo-session h1 {
+    background-color: #cecece;
+    padding: 20px;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    margin-right:20px;
+
+}
+
+img:hover{
+    border-radius:70%;
+    opacity:0.3;
 }
