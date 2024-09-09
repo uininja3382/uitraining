@@ -9,11 +9,15 @@ header {
     text-align: center;
 }
 
+/* it will target direct children */
+
 header>h1 {
     margin: 0;
     font-style: italic;
     color: #fff;
 }
+
+/*adjacent selectors */
 
 header+.border-line {
     border-top: 1px solid #cecece;
@@ -40,10 +44,21 @@ header+.border-line {
     padding: 10px;
 }
 
+/* last-child is a pseudo class */
+/* not is a pseudo class */
+
+
+.grocery-container>ul li:first-child {
+    border-bottom: 1px solid red;
+    margin-bottom: 20px;
+}
+
 .grocery-container>ul li:not(:last-child) {
     border-bottom: 1px solid #000;
     margin-bottom: 20px;
 }
+
+
 
 .container {
     margin: 20px;
@@ -62,12 +77,29 @@ header+.border-line {
     list-style-type: none;
 }
 
-
-.is-section :is(h3, h5) {
-    color: red;
+/* n-child selector */
+.n-section li:nth-child(1){
+    font-style:italic;
+    color:green;
+    background-color: bisque;
 }
 
-.firstline::first-line {
+/* is pseudo selector */
+
+.is-section :is(h3,h5,a){
+    color:red;
+}
+
+/* has pseudo selector  is used to target a parent*/
+
+.container:has(img){
+    background-color: red;
+}
+
+/* first line */
+
+.firstline:first-line {
     font-style: italic;
     font-weight: bold;
+    font-size:45px;
 }
