@@ -3,7 +3,6 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    padding-top:40px;
     padding-bottom: 16px;
     margin: 0;
 }
@@ -21,7 +20,7 @@ header {
     padding: 0.5rem 0 0.5rem 1rem;
     background-color: brown;
     display: flex;
-    position:fixed;
+    position:sticky;
     top:0;
     width:100%;
 
@@ -73,6 +72,16 @@ header {
     background-color: burlywood;
 }
 
+.code-container{
+    font-size:20px;
+}
+
+code{
+    font-size:2em;
+    display:inline-block;
+    margin:30px 20px;
+}
+
 .circles-container{
     border-radius:10px;
     width:50vw;
@@ -80,6 +89,7 @@ header {
     background-color: #f7f7f7;
     margin:40px;
     padding:20px;
+    border:1px solid #000;
 }
 
 .circle{
@@ -94,6 +104,7 @@ header {
     height:25px;
     border-radius:50%;
     background-color:red;
+ 
 }
 
 section{
