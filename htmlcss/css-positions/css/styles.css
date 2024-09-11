@@ -67,7 +67,7 @@ header {
     background-color: gray;
 }
 
-.nav-list li>a:active {
+.nav-list li>a:active, .nav-list li>a:focus {
     font-weight: bold;
     color:#fff;
     background-color: burlywood;
