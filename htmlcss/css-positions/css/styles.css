@@ -1,11 +1,17 @@
+html{
+    font-size: 20px;
+}
+
+
 body {
     font-family: "DM Serif Text", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
     padding-bottom: 16px;
     margin: 0;
 }
+
+
 
 .hero-img{
     width:100%;
@@ -22,7 +28,6 @@ header {
     display: flex;
     position:sticky;
     top:0;
-    width:100%;
 
     h1 {
         font-family: "Dancing Script", cursive;
@@ -84,7 +89,7 @@ code{
 
 .circles-container{
     border-radius:10px;
-    width:50vw;
+    width: 60rem;
     height:50vh;
     background-color: #f7f7f7;
     margin:40px;
