@@ -16,9 +16,13 @@ main {
     gap: 1.5rem;
 }
 
+article{
+    text-align: center;
+}
 article .author-pic {
     width: 100px;
     height: 100px;
+    margin:0 auto;
     border-radius: 50%;
     background-image: url('../imgs/emp1.jpg');
     background-position: center;
