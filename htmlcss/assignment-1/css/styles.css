@@ -3,7 +3,8 @@
 }
 
 :root {
-    --body-background-color: #ebf1ff;
+    --my-text-size:10px;
+    --body-background-color: #ebf1ff; /* css variables */
     --inner-box-background-color: #fff;
     --inner-box-margins: 1rem;
     --inner-box-border-radius: 10px;
@@ -15,10 +16,11 @@
     --text-box-title-font: "Sora", sans-serif;
     --button-background-color:#000;
     --button-text-color:#fff;
+    --inner-box-header-title-font-size:1.5rem;
 }
 
 html {
-    font-size: 16px;
+    font-size:16px;
 }
 
 body {
@@ -26,6 +28,7 @@ body {
 }
 
 section {
+    --gap-value:1.5rem; 
     margin:0 auto;
     display:flex;
     flex-direction: column;
@@ -37,7 +40,7 @@ section {
     background-color: var(--inner-box-background-color);
     border-radius: var(--inner-box-border-radius);
     display: flex;
-    gap:1.25rem;
+    gap:var(--gap-value);
     margin: var(--inner-box-margins);
     padding: 0.75rem;
 }
@@ -91,7 +94,7 @@ section {
 
 .text-box h2 {
     font-family: var(--text-box-title-font);
-    font-size: 1.25rem;
+    font-size:var(--inner-box-header-title-font-size);
     font-weight: 800;
     margin-bottom: 0.35rem;
 }
@@ -126,7 +129,7 @@ section {
 }
 
 .material-symbols-outlined{
-    font-size:1rem;
+    font-size:1.35rem;
 }
 
 @media (max-width:1190px) {
@@ -147,6 +150,7 @@ section {
     }
     .black-button{
         justify-content: center;
+        margin: 0;
     }
     
 }
