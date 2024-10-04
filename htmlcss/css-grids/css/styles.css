@@ -12,8 +12,9 @@ body {
 
 main {
     margin: 1.5rem;
-    display: flex;
-    gap: 1.5rem;
+    display: grid;
+    row-gap:2rem;
+
 }
 
 article{
@@ -76,4 +77,23 @@ article {
 
 .author {
     font-weight: 600;
+}
+
+@media (min-width:450px){
+    main{
+        grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 2fr 2fr;
+    column-gap:2rem;
+    row-gap: 1rem;
+    }
+}
+
+
+@media (min-width:650px){
+    main{
+        grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2fr 2fr;
+    column-gap:2rem;
+    row-gap: 1rem;
+    }
 }
