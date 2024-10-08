@@ -12,8 +12,10 @@ body {
 
 main {
     margin: 1.5rem;
-    display: grid;
-    row-gap:2rem;
+    display:grid;
+    row-gap:1rem;
+    column-gap:1rem;
+   
 
 }
 
@@ -79,6 +81,8 @@ article {
     font-weight: 600;
 }
 
+
+
 @media (min-width:450px){
     main{
         grid-template-columns: repeat(2,1fr);
@@ -97,3 +101,4 @@ article {
     row-gap: 1rem;
     }
 }
+

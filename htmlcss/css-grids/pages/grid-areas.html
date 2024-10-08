@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid areas</title>
+</head>
+<style>
+    body{
+        padding:0;
+        margin:0;
+    }
+    header{
+        display:grid;
+        padding:0.5rem;
+        grid-template-columns: 10rem repeat(3,1fr);
+        background-color: skyblue;
+        grid-template-areas: "logo navigation navigation navigation search"
+    }
+    h1{
+        grid-area:logo;
+        margin:0;   
+    }
+    nav{
+        grid-area:navigation;
+        
+    }
+    ul{
+        display:flex;
+        list-style-type: none;
+        gap:1rem;
+    }
+    li{
+        padding:0.5rem;
+        border-radius: 0.5rem;
+        background-color: azure;
+        color:#000;
+    }
+    div{
+        grid-area:search;
+        padding:1rem;
+
+    }
+
+    input{
+        height: 2rem;
+        padding:0.25rem;
+        border-radius: 2.5rem;
+    }
+  
+</style>
+<body>
+    
+        <header>
+            <h1>Company Logo here</h1>
+            <nav>
+                <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Products</li>
+                <li>Contacts Us</li>
+                </ul>
+            </nav>
+            <div>
+                <input type="search" placeholder="search here">
+                <button>Go</button>
+            </div>
+        </header>
+   
+   
+</body>
+</html>
